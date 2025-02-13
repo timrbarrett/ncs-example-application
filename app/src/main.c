@@ -16,22 +16,25 @@ LOG_MODULE_REGISTER(main, CONFIG_APP_LOG_LEVEL);
 #define BLINK_PERIOD_MS_STEP 100U
 #define BLINK_PERIOD_MS_MAX  1000U
 
+#define LED4_NODE DT_ALIAS(led4)
+
 int main(void)
 {
 	int ret;
-	unsigned int period_ms = BLINK_PERIOD_MS_MAX;
-	const struct device *sensor, *blink;
+	//unsigned int period_ms = BLINK_PERIOD_MS_MAX;
+	const struct device *sensor; //, *blink;
 	struct sensor_value last_val = { 0 }, val;
 
 	printk("Zephyr Example Application %s\n", APP_VERSION_STRING);
 
-	sensor = DEVICE_DT_GET(DT_NODELABEL(example_sensor));
+	sensor = DEVICE_DT_GET(DT_NODELABEL(lsm9ds1));
 	if (!device_is_ready(sensor)) {
 		LOG_ERR("Sensor not ready");
 		return 0;
 	}
 
-	blink = DEVICE_DT_GET(DT_NODELABEL(blink_led));
+	/*
+	blink = DEVICE_DT_GET(DT_NODELABEL(led4));
 	if (!device_is_ready(blink)) {
 		LOG_ERR("Blink LED not ready");
 		return 0;
@@ -44,7 +47,7 @@ int main(void)
 	}
 
 	printk("Use the sensor to change LED blinking period\n");
-
+	*/
 	while (1) {
 		ret = sensor_sample_fetch(sensor);
 		if (ret < 0) {
@@ -58,6 +61,7 @@ int main(void)
 			return 0;
 		}
 
+		/*
 		if ((last_val.val1 == 0) && (val.val1 == 1)) {
 			if (period_ms == 0U) {
 				period_ms = BLINK_PERIOD_MS_MAX;
@@ -69,7 +73,8 @@ int main(void)
 			       period_ms);
 			blink_set_period_ms(blink, period_ms);
 		}
-
+		*/
+	
 		last_val = val;
 
 		k_sleep(K_MSEC(100));

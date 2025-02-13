@@ -1,0 +1,15 @@
+# WARNING. THIS FILE IS AUTO-GENERATED. DO NOT MODIFY!
+#
+# This file contains build system settings derived from your modules.
+#
+# Modules may be set via ZEPHYR_MODULES, ZEPHYR_EXTRA_MODULES,
+# and/or the west manifest file.
+#
+# See the Modules guide for more information.
+"BOARD_ROOT":"C:/Users/timrb/workspace/ncs-example-application"
+"DTS_ROOT":"C:/Users/timrb/workspace/ncs-example-application"
+"BOARD_ROOT":"C:/Users/timrb/workspace/nrf"
+"DTS_ROOT":"C:/Users/timrb/workspace/nrf"
+"SNIPPET_ROOT":"C:/Users/timrb/workspace/nrf"
+"MODULE_EXT_ROOT":"C:/Users/timrb/workspace/nrf"
+"SOC_ROOT":"C:/Users/timrb/workspace/modules/soc-hwmv1"

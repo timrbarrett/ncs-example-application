@@ -1,0 +1,2 @@
+"nrf":"C:/Users/timrb/workspace/nrf":"C:/Users/timrb/workspace/nrf/sysbuild"
+"mcuboot":"C:/Users/timrb/workspace/bootloader/mcuboot":"C:/Users/timrb/workspace/bootloader/mcuboot/boot/zephyr/sysbuild"
