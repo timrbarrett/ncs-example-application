@@ -1,0 +1,34 @@
+menuconfig ETL
+    bool "Etl"
+    select ETL_LIB
+	help
+	  A C++ template library for embedded applications.
+
+if ETL
+
+config ETL_LIB
+    bool "Support Embedded Template Library"
+    depends on CPP
+
+config APP_LINK_WITH_ETL
+	bool "Link 'app' with ETL"
+	default n
+	depends on ETL
+	help
+	  Add ETL header files to the 'app' include path.
+	  The user must create a file named etl_profile.h
+	  that exists in the include path for the project.
+	  Look at https://www.etlcpp.com/setup.html
+
+config ETL_PROFILE
+	string "ETL_PROFILE"
+	default "PROFILE_GCC_GENERIC"
+	help
+	  allowed values:
+	  PROFILE_GCC_GENERIC
+	  PROFILE_CLANG_GENERIC
+	  PROFILE_MSVC
+	  PROFILE_ARMV6
+	  PROFILE_ARMV5
+
+endif

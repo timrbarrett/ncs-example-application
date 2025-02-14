@@ -75,6 +75,10 @@ C:/Users/timrb/workspace/ncs-example-application/app/build/app/zephyr/lib/posix/
 C:/Users/timrb/workspace/ncs-example-application/app/build/app/zephyr/lib/posix/options/CMakeFiles/lib__posix__options.dir
 C:/Users/timrb/workspace/ncs-example-application/app/build/app/zephyr/lib/posix/options/CMakeFiles/edit_cache.dir
 C:/Users/timrb/workspace/ncs-example-application/app/build/app/zephyr/lib/posix/options/CMakeFiles/rebuild_cache.dir
+C:/Users/timrb/workspace/ncs-example-application/app/build/app/zephyr/lib/cpp/CMakeFiles/edit_cache.dir
+C:/Users/timrb/workspace/ncs-example-application/app/build/app/zephyr/lib/cpp/CMakeFiles/rebuild_cache.dir
+C:/Users/timrb/workspace/ncs-example-application/app/build/app/zephyr/lib/cpp/abi/CMakeFiles/edit_cache.dir
+C:/Users/timrb/workspace/ncs-example-application/app/build/app/zephyr/lib/cpp/abi/CMakeFiles/rebuild_cache.dir
 C:/Users/timrb/workspace/ncs-example-application/app/build/app/zephyr/lib/hash/CMakeFiles/edit_cache.dir
 C:/Users/timrb/workspace/ncs-example-application/app/build/app/zephyr/lib/hash/CMakeFiles/rebuild_cache.dir
 C:/Users/timrb/workspace/ncs-example-application/app/build/app/zephyr/lib/heap/CMakeFiles/edit_cache.dir
