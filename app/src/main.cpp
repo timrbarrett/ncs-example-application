@@ -7,9 +7,8 @@
 #include <zephyr/drivers/sensor.h>
 #include <zephyr/logging/log.h>
 
-extern "C"{
-#include <app/drivers/blink.h>
-}
+//extern "C"{
+//}
 #include <app/etl/deque.h>
 
 #include <app_version.h>
@@ -24,34 +23,20 @@ LOG_MODULE_REGISTER(main, CONFIG_APP_LOG_LEVEL);
 int main(void)
 {
 	int ret;
-	//unsigned int period_ms = BLINK_PERIOD_MS_MAX;
-	const struct device *sensor; //, *blink;
+
+	const struct device *sensor;
 	struct sensor_value last_val = { 0 }, val;
 
-	printk("Zephyr Example Application %s\n", APP_VERSION_STRING);
+	printk("--> Zephyr Example Application %s\n", APP_VERSION_STRING);
 
 	sensor = DEVICE_DT_GET(DT_NODELABEL(lsm9ds1));
 	if (!device_is_ready(sensor)) {
 		LOG_ERR("Sensor not ready");
 		return 0;
 	}
+	
 	etl::deque<int,5> tim;
 
-	/*
-	blink = DEVICE_DT_GET(DT_NODELABEL(led4));
-	if (!device_is_ready(blink)) {
-		LOG_ERR("Blink LED not ready");
-		return 0;
-	}
-
-	ret = blink_off(blink);
-	if (ret < 0) {
-		LOG_ERR("Could not turn off LED (%d)", ret);
-		return 0;
-	}
-
-	printk("Use the sensor to change LED blinking period\n");
-	*/
 	while (1) {
 		ret = sensor_sample_fetch(sensor);
 		if (ret < 0) {
@@ -64,20 +49,6 @@ int main(void)
 			LOG_ERR("Could not get sample (%d)", ret);
 			return 0;
 		}
-
-		/*
-		if ((last_val.val1 == 0) && (val.val1 == 1)) {
-			if (period_ms == 0U) {
-				period_ms = BLINK_PERIOD_MS_MAX;
-			} else {
-				period_ms -= BLINK_PERIOD_MS_STEP;
-			}
-
-			printk("Proximity detected, setting LED period to %u ms\n",
-			       period_ms);
-			blink_set_period_ms(blink, period_ms);
-		}
-		*/
 	
 		last_val = val;
 
