@@ -1,0 +1,4 @@
+ETL001 250201 Starting with the simplest of etl_types possible
+
+ETL002 250201 I'm going to return 0 as the result of not being able to include app_timer immediately
+    it will become a call to low frequency clock through Zephyr ln85 & ln90 in chain.h

@@ -1,0 +1,19 @@
+
+Active:
+
+    ULISP002 Use ulisp-zephyr code from [reference] 
+        modified to use doubles instead of floats to compile.
+
+    ULISP003 Add the line "CONFIG_BT_CENTRAL=y" to prj.conf 
+        to fix the linker problems with 
+            `bt_le_scan_stop'
+            `bt_conn_le_create'
+            `bt_le_scan_start'
+
+    ULISP004 Enabling ulisp to be used as REPL over ble.
+        ble is started by the NUS definitions
+        even edit works!       
+
+Superceded:
+
+    ~ULISP001~ Currently #define horrible compromise guards all the code that I can't get to build.

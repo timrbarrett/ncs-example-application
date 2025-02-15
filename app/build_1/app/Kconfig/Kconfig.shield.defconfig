@@ -1,0 +1,3 @@
+osource "C:/Users/timrb/workspace/ncs-example-application/boards/shields/*/Kconfig.defconfig"
+osource "C:/Users/timrb/workspace/ncs-example-application/boards/shields/*/Kconfig.defconfig"
+osource "C:/Users/timrb/workspace/nrf/boards/shields/*/Kconfig.defconfig"

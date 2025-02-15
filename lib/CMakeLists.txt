@@ -2,3 +2,4 @@
 
 add_subdirectory_ifdef(CONFIG_CUSTOM custom)
 add_subdirectory_ifdef(CONFIG_ETL etl)
+add_subdirectory(etl_type)

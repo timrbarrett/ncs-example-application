@@ -1,0 +1,18 @@
+
+# Create a library called ulisp
+add_library(ulisp ulisp.c)
+
+# Include directories for ulisp
+target_include_directories(ulisp PRIVATE 
+    ${CMAKE_CURRENT_SOURCE_DIR} 
+    )
+
+# Add source files for ulisp
+target_sources(ulisp PRIVATE 
+    ${CMAKE_CURRENT_SOURCE_DIR}/ulisp.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/ulisp.h
+    )
+
+target_link_libraries(ulisp PRIVATE zephyr)
+
+

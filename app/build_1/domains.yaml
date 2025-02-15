@@ -1,0 +1,7 @@
+default: app
+build_dir: C:/Users/timrb/workspace/ncs-example-application/app/build_1
+domains:
+  - name: app
+    build_dir: C:/Users/timrb/workspace/ncs-example-application/app/build_1/app
+flash_order:
+  - app

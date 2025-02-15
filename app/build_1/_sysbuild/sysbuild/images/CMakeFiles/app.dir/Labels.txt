@@ -1,0 +1,13 @@
+# Target labels
+ app
+# Source files and their labels
+C:/Users/timrb/workspace/ncs-example-application/app/build_1/_sysbuild/sysbuild/images/CMakeFiles/app
+C:/Users/timrb/workspace/ncs-example-application/app/build_1/_sysbuild/sysbuild/images/CMakeFiles/app.rule
+C:/Users/timrb/workspace/ncs-example-application/app/build_1/_sysbuild/sysbuild/images/CMakeFiles/app-complete.rule
+C:/Users/timrb/workspace/ncs-example-application/app/build_1/_sysbuild/sysbuild/images/app-prefix/src/app-stamp/app-build.rule
+C:/Users/timrb/workspace/ncs-example-application/app/build_1/_sysbuild/sysbuild/images/app-prefix/src/app-stamp/app-configure.rule
+C:/Users/timrb/workspace/ncs-example-application/app/build_1/_sysbuild/sysbuild/images/app-prefix/src/app-stamp/app-download.rule
+C:/Users/timrb/workspace/ncs-example-application/app/build_1/_sysbuild/sysbuild/images/app-prefix/src/app-stamp/app-install.rule
+C:/Users/timrb/workspace/ncs-example-application/app/build_1/_sysbuild/sysbuild/images/app-prefix/src/app-stamp/app-mkdir.rule
+C:/Users/timrb/workspace/ncs-example-application/app/build_1/_sysbuild/sysbuild/images/app-prefix/src/app-stamp/app-patch.rule
+C:/Users/timrb/workspace/ncs-example-application/app/build_1/_sysbuild/sysbuild/images/app-prefix/src/app-stamp/app-update.rule

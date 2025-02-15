@@ -1,0 +1,25 @@
+Active
+
+    BLES002 superceeds BLE001
+    
+        Require minimal changes to ulisp. define read a char and write a char.
+
+        described in http://www.ulisp.com/show?3517
+        " uLisp - connecting via Bluetooth "
+
+        WORKING Jan 31 2025 
+
+    BLES003 Has a ringbuffer storing rx20s for subsequent processing.
+
+        Zephyr’s ring_buf is thread-safe, 
+        so you don't need to add additional synchronization mechanisms 
+        as long as the producer (NUS callback) 
+        and consumer (bleserial_receive) are on different contexts.
+        *** need to understand 'are on different contexts'
+
+Inactive
+
+    BLES001 Code written by ChatGPT
+
+        create a .c and .h file that will allow me to say declare a variable called bleserial 
+        that offers the NUs service as a serial stream just like another uart in ulisp.

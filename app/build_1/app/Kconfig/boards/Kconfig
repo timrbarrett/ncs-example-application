@@ -1,0 +1,2 @@
+# Load Zephyr board Kconfig descriptions.
+osource "C:/Users/timrb/workspace/zephyr/boards/arduino/nano_33_ble/Kconfig"

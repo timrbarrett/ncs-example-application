@@ -1,19 +1,6 @@
-cmake:
-  application:
-    source-dir: C:/Users/timrb/workspace/zephyr/share/sysbuild
-  board:
-    name: arduino_nano_33_ble
-    qualifiers: nrf52840/sense
-    revision: 
-  kconfig:
-    files:
-     - C:/Users/timrb/workspace/ncs-example-application/app/build/_sysbuild/empty.conf
-     - C:/Users/timrb/workspace/ncs-example-application/app/build/_sysbuild/empty.conf
-    user-files:
-     - C:/Users/timrb/workspace/ncs-example-application/app/build/_sysbuild/empty.conf
-  sysbuild: true
-version: 0.1.0
 west:
-  command: C:\ncs\toolchains\b620d30767\opt\bin\Scripts\west build --build-dir c:/Users/timrb/workspace/ncs-example-application/app/build c:/Users/timrb/workspace/ncs-example-application/app --pristine --board arduino_nano_33_ble/nrf52840/sense -- -DNCS_TOOLCHAIN_VERSION=NONE -DBOARD_ROOT=c:\Users\timrb\workspace\ncs-example-application
+  command: C:\ncs\toolchains\b620d30767\opt\bin\Scripts\west build --build-dir c:/Users/timrb/workspace/ncs-example-application/app/build
+    c:/Users/timrb/workspace/ncs-example-application/app --pristine --board arduino_nano_33_ble/nrf52840/sense
+    -- -DNCS_TOOLCHAIN_VERSION=NONE -DBOARD_ROOT=c:\Users\timrb\workspace\ncs-example-application
   topdir: c:\Users\timrb\workspace
   version: 1.2.0

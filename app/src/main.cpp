@@ -9,7 +9,7 @@
 
 //extern "C"{
 //}
-#include <app/etl/deque.h>
+#include <app/etl_type/pubsub_store.h>
 
 #include <app_version.h>
 
