@@ -4,7 +4,7 @@
 # Copyright (c) 2021 Nordic Semiconductor ASA
 # SPDX-License-Identifier: Apache-2.0
 
-# /src level CMakeLists.txt
+# /app level CMakeLists.txt
 cmake_minimum_required(VERSION 3.20.0)
 
 set(BOARD_RUNNER jlink)
@@ -17,9 +17,9 @@ find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 
 project(app LANGUAGES C CXX)
 
-#add_executable(app src/main.cpp)
-target_sources(app PRIVATE ${CMAKE_SOURCE_DIR}/../lib/etl_type/ulisp.c)
-#target_sources(app PRIVATE src/main.cpp)
-target_include_directories(app PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../lib/etl_setup)
+target_sources(app PRIVATE src/main.cpp )
 
-#EOF
+target_include_directories(app PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../lib/etl_setup)
+zephyr_library_include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../lib/etl_type)
+
+#EOF /app level

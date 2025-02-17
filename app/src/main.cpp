@@ -35,7 +35,7 @@ int main(void)
 		return 0;
 	}
 	
-	etl::deque<int,5> tim;
+	//etl::deque<int,5> tim;
 
 	while (1) {
 		ret = sensor_sample_fetch(sensor);
